@@ -1,0 +1,105 @@
+//模态框的部分
+.van-popup {
+  border-radius: .25rem;
+  width: 15rem;
+  height: 7.5rem;
+} //模态框的提示按钮
+.buybox2 {
+  border-radius: .25rem;
+  .buxboxicon{
+    position: absolute;
+    right: 0;
+    top:1px;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.2rem;
+    span {
+      font-size: .75rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color:#333333;
+    }
+  }
+  .toplive {
+    display: block;
+    width: 7rem;
+    height: 4.75rem;
+    margin: 0 auto;
+    margin-top: 1.85rem;
+  }
+  .liveroomtry {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    width: 90%;
+    height: 2rem;
+    align-items: center;
+    margin-top: .25rem;
+    span {
+      font-size: .65rem;
+      color: #fff;
+    }
+  }
+  .buypayit {
+    width: 7.5rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    .right {
+      display: flex;
+      span {
+        font-size: .75rem;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+      }
+      img {
+        width: .9rem;
+        height: .9rem;
+        margin-right: .25rem;
+      }
+    }
+  }
+  .backgo {
+    width: 7.5rem;
+    height: 2rem;
+    position: absolute;
+    background-color: #333333;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 0 0 .25rem 0;
+    span {
+      font-size: .75rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+} 
+
+
+//引导充值的第二个模态框
+
+#buybox3 {
+  width: auto;
+}

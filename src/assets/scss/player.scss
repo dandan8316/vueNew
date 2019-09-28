@@ -1,0 +1,193 @@
+$player-color: gray;
+$type: screen;
+$proto: max-width;
+$value: 750px;
+
+
+// 播放器的容器
+.player-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    @media #{$type} and ($proto: $value) {
+        width: 100vw;
+    }
+
+    .video-player {
+        cursor: pointer;
+        object-fit: fill;
+    }
+}
+// *播放器播放按钮样式*
+.video-js .vjs-big-play-button {
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    border: 0;
+}
+
+.video-js .vjs-tech {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+
+
+}
+
+.vjs-poster {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+
+}
+
+.vjs-custom-skin>.video-js {
+    width: 100%;
+    font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    height: 100%;
+}
+
+.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+    font-size: 1.4em;
+    text-align: center;
+    display: flex;
+    margin-top: 50%;
+    justify-content: center;
+}
+
+
+
+// 播放按钮的
+.vjs-play-control {
+
+    position: absolute;
+    left: .1rem;
+    bottom: 0;
+    width: .5rem;
+    height: .5rem;
+}
+
+// 文字的模态框
+.video-js .vjs-modal-dialog {
+    background: rgba(0, 0, 0, 0.8);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+    overflow: inherit;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+// 中间的按钮的叉子
+.vjs-error .vjs-error-display:before {
+    color: #fff;
+    content: 'X';
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    left: 0;
+    line-height: 1;
+    margin-top: -0.5em;
+    position: absolute;
+    text-shadow: 0.05em 0.05em 0.1em #000;
+    text-align: center;
+    top: 150%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+// 按钮的叉子
+.vjs-custom-skin>.video-js .vjs-big-play-button {
+    top: 150%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: -1em;
+}
+
+
+
+
+// *播放器播放按钮样式*
+.video-js .vjs-big-play-button {
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    border: 0;
+}
+
+// 播放条的位置
+.video-js .vjs-control-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.0em;
+    background-color: #2B333F;
+    background-color: rgba(43, 51, 63, 0.7);
+}
+
+.vjs-custom-skin>.video-js .vjs-big-play-button {
+    margin-left: -1em;
+}
+
+.video-js .vjs-big-play-button:hover,
+.vjs-custom-skin .video-js:hover .vjs-big-play-button {
+    background-color: $player-color;
+    transition: all 0.3s;
+}
+
+.video-js .vjs-control:focus:before,
+.video-js .vjs-control:hover:before,
+.video-js .vjs-control:focus {
+    outline: none;
+}
+
+.vjs-custom-skin>.video-js .vjs-play-progress,
+.vjs-custom-skin>.video-js .vjs-volume-level {
+    background-color: $player-color;
+}
+
+// 禁止浏览器的下载按钮
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+ 
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+ 
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+
+
+.video-js .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+video{
+height: 100vh !important;
+}

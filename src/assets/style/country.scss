@@ -1,0 +1,86 @@
+#quhao {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.couns {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    img {
+        width: 1.225rem;
+        height: .85rem;
+        border-radius: 1Px;
+        -webkit-border-radius: 1Px;
+        -moz-border-radius: 1Px;
+        -ms-border-radius: 1Px;
+        -o-border-radius: 1Px;
+    }
+}
+
+#search {
+    width: 16.75rem;
+    height: 20rem;
+    line-height: 1.5rem;
+    text-indent: 1em;
+    border-radius: .1rem;
+    font-size: .7rem;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 2.25rem;
+    cursor: pointer;
+    z-index: 888;
+    max-height: 20rem;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+}
+
+#search li:hover {
+    background-color: white;
+    color: #0090FF;
+}
+
+#search li {
+
+    // &:nth-of-type(odd) {
+    //   background-color: pink;
+    // }
+    img {
+        width: 1rem;
+        height: .5rem;
+        display: inline-block;
+    }
+}
+
+/*自定义滚动条*/
+::-webkit-scrollbar {
+    width: .7rem;
+    height: .7rem;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: .25rem solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: .05rem .05rem .25rem rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 1rem;
+    background-clip: content-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

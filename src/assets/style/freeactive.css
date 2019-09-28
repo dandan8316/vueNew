@@ -1,0 +1,63 @@
+.video-js .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15.5rem;
+    height: 12.5rem;
+  }
+  .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    width: 15.5rem;
+    height: 12.5rem;
+}
+.vjs-poster {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #000000;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 12.5rem;
+    width: 100%;
+
+}
+
+/* 播放的大按钮 */
+.video-js .vjs-big-play-button{
+    border-radius: 50%;
+
+}
+/* 控制条 */
+.vjs-custom-skin > .video-js .vjs-control {
+    width: 2rem;
+}
+
+
+
+.vjs-custom-skin > .video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    margin-left: -1em;
+    margin-top: -1em;
+}
+.video-js .vjs-big-play-button {
+ 
+    width: 2em;
+    
+}
+.video-js:hover .vjs-big-play-button, .vjs-custom-skin > .video-js .vjs-big-play-button:focus, .vjs-custom-skin > .video-js .vjs-big-play-button:active {
+    background-color: none;
+}
+.video-js:hover .vjs-big-play-button, .vjs-custom-skin > .video-js .vjs-big-play-button:focus, .vjs-custom-skin > .video-js .vjs-big-play-button:active {
+    background-color:none;
+}
