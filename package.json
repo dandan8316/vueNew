@@ -17,7 +17,7 @@
     "postcss-pxtorem": "^4.0.1",
     "qiniu-js": "^2.5.4",
     "qs": "^6.7.0",
-    "vant": "^1.6.15",
+    "vant": "^2.1.8",
     "videojs-contrib-hls": "^5.15.0",
     "videojs-contrib-hls.js": "^3.2.0",
     "vue": "^2.6.10",
